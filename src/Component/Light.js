@@ -5,7 +5,7 @@ function Light(props) {
         props.clickHandle(props.rowIndex,props.colIndex)
     }
     return (
-        <div className={`block ${props.itemVale?' light-block':''}`} onClick={handleClick} >
+        <div className={`block ${props.itemVaule?' light-block':''}`} onClick={handleClick} >
                     
         </div>
     )

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Light from './Light'
+import uid from 'uid';
+
 import './../css/board.css'
 export default class GameBoard extends Component {
      initialArray=[
@@ -71,10 +73,10 @@ export default class GameBoard extends Component {
                 {this.state.isGame?<h1>You Won!</h1>:<h1>!Light It Up</h1>}
                     {   
                         rows.map((block,rowIndex)=>
-                            <div className="item flex-item">
+                            <div className="item flex-item" key={uid()}>
                                 {
                                     block.map((item,colIndex)=>
-                                    <Light itemVale={item} colIndex={colIndex} rowIndex={rowIndex} clickHandle={this.click} ></Light>)
+                                    <Light itemVaule={item} key={uid()} colIndex={colIndex} rowIndex={rowIndex} clickHandle={this.click} ></Light>)
                                 }
                             </div>)
                     }
