@@ -49,9 +49,12 @@ export default class GameBoard extends Component {
             this.setState({...this.state,gameArray: newArray})  
             let game = 0
             this.state.gameArray.map(row=>{
+                
                 row.map(item=>{
-                    game = item || game
-                })
+                     game = item || game
+                     return game
+                    })
+                return null
             })
             if(game===0){
                 this.setState({...this.state,isGame:true,isPlaying:false})
