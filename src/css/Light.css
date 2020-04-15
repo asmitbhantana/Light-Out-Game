@@ -1,0 +1,19 @@
+.block{
+    background-color: slateblue;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+.light-block{
+    background-color: skyblue;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+
+}
+.block:hover{
+    background-color: blue;
+}
+.light-block:hover{
+    background-color: silver;
+}
